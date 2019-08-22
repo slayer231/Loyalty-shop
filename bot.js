@@ -1,13 +1,13 @@
 ﻿ const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "Y"
-var adminprefix = 'Y'
+var prefix = "L"
+var adminprefix = 'L'
 
 
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("Yobc")) {
+    if (message.content.startsWith("Lobc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -24,7 +24,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "Y";
+  var prefix = "L";
 
   client.on("message", message => {
   
@@ -67,23 +67,23 @@ m.sendMessage(args)
 });
 
   client.on('message', msg => {
-    if(msg.content === 'Yhelp')
+    if(msg.content === 'Lhelp')
     msg.reply('Check Your DM :white_check_mark:')
   });
   
   
   client.on("message", message => {
-    if (message.content === ".help") {
+    if (message.content === "Lhelp") {
      const embed = new Discord.RichEmbed() 
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
 
-       Yobc | لأرسال برود كاست للكل
+       Lobc | لأرسال برود كاست للكل
 
-       Ybc  |  لأرسال برود كاست للأونلاين
+       Lbc  |  لأرسال برود كاست للأونلاين
 
-       Yadminbc | برودكاست عادي
+       Ladminbc | برودكاست عادي
        by : WESO !
 
        ** `)
